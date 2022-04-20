@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('templates/head', { title: "Nuevo producto"}) %>
+  <body>
+    <div class="container">
+      <%- include('templates/navbar', { urlIndex:'../..', urlProducts: './',
+      urlRegister: './register'}) %>
+      <header><h2>Nuevo producto</h2></header>
+      <div class="form">
+        <form action="/products/register" method="post">
+          <div class="mb-3">
+            <input
+              type="title"
+              name="title"
+              id="title"
+              placeholder="Nombre del producto"
+              class="form-control form-control-sm"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="price"
+              id="price"
+              placeholder="Precio"
+              class="form-control form-control-sm"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="thumbnail"
+              id="thumbnail"
+              placeholder="url de imagen"
+              class="form-control form-control-sm"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <button
+              type="submit"
+              class="btn btn-sm btn-success float-end"
+              title="Guardar"
+              id="btnGuardar"
+            >
+              Guardar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <%- include('templates/footer', {}) %>
+  </body>
+</html>

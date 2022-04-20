@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('templates/head', { title: "Productos"}) %>
+  <body>
+    <div class="container">
+      <%- include('templates/navbar', { urlIndex:'../', urlProducts: './',
+      urlRegister: '../products/register'}) %>
+      <header>
+        <h1>Productos</h1>
+      </header>
+      <div class="row">
+        <div class="col">
+          <%- include('templates/productsTable', {products}) %>
+        </div>
+      </div>
+    </div>
+    <%- include('templates/footer', {}) %>
+  </body>
+</html>

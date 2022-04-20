@@ -1,0 +1,28 @@
+{
+  "name": "desafio-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "nodemon": "^2.0.13",
+    "nodemon-webpack-plugin": "^4.5.2",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

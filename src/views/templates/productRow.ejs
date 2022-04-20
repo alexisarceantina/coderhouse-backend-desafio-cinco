@@ -1,0 +1,11 @@
+<tr>
+  <th scope="row"><%= item.title %></th>
+  <td><%= item.price %></td>
+  <td>
+    <img
+      width="50"
+      height="50"
+      src="<%= item.thumbnail ? item.thumbnail : `https://picsum.photos/${50 + item.id}` %>"
+    />
+  </td>
+</tr>
